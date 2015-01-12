@@ -5,7 +5,10 @@
 	"license": "MIT",
 	"type": "project",
 	"require": {
-		"laravel/framework": "4.2.*"
+		"laravel/framework": "4.2.*",
+		"jenssegers/mongodb": "~2.0",
+		"bshaffer/oauth2-server-php": "v1.3",
+		"bshaffer/oauth2-server-httpfoundation-bridge": "~1.1"
 	},
 	"autoload": {
 		"classmap": [

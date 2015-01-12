@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'default' => 'mysql',
+	'default' => 'mongodb',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -45,6 +45,15 @@ return array(
 	*/
 
 	'connections' => array(
+		
+		'mongodb' => array(
+		    'driver'   => 'mongodb',
+		    'host'     => 'localhost',
+		    'port'     => 27017,
+		    'username' => 'admin',
+		    'password' => 'secretpassword',
+		    'database' => 'laravel'
+		),
 
 		'sqlite' => array(
 			'driver'   => 'sqlite',
