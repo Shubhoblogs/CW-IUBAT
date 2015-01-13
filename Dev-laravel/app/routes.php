@@ -11,12 +11,28 @@
 |
 */
 
+
+// return the base layout to work with
 Route::get('/', function()
 {
-	$storage = new OAuth2\Storage\Mongo(DB::getMongoDB());
-	$storage->setClientDetails('1234', '1234', 'http://codewarriors.dev');
-	return View::make('hello');
+	return View::make('layout');
 });
+
+
+// application specific routes
+Route::group(['prefix' => 'templates'], function()
+{
+	Route::get('home', 'TemplateController@home');
+	
+	Route::group(['prefix' => 'user'], function() {
+		Route::get('login', 'TemplateController@login');
+	});
+
+});
+
+
+
+
 
 App::singleton('oauth2', function() {
 	

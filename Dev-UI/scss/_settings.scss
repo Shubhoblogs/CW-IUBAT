@@ -87,7 +87,7 @@ $include-html-global-classes: $include-html-classes;
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
 // We use these to define default font stacks
-// $font-family-sans-serif: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+$font-family-sans-serif: 'Lato', "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 // $font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
 // $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 
@@ -116,7 +116,7 @@ $include-html-global-classes: $include-html-classes;
 // $black       : #000000;
 
 // We use these as default colors throughout
-// $primary-color: #008CBA;
+ $primary-color: #1BBC9B;
 // $secondary-color: #e7e7e7;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
@@ -124,7 +124,7 @@ $include-html-global-classes: $include-html-classes;
 // $info-color: #a0d3e8;
 
 // We use these to control various global styles
-// $body-bg: $white;
+ $body-bg: #ECF0F1;
 // $body-font-color: $jet;
 // $body-font-family: $font-family-sans-serif;
 // $body-font-weight: $font-weight-normal;
@@ -1364,16 +1364,16 @@ $include-html-global-classes: $include-html-classes;
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-// $topbar-bg-color: $oil;
+$topbar-bg-color: #ffffff;
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin
-// $topbar-height: rem-calc(45);
+$topbar-height: rem-calc(80);
 // $topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar
 // $topbar-title-weight: $font-weight-normal;
-// $topbar-title-font-size: rem-calc(17);
+ $topbar-title-font-size: rem-calc(21);
 
 // Style the top bar dropdown elements
 // $topbar-dropdown-bg: $oil;
@@ -1386,16 +1386,16 @@ $include-html-global-classes: $include-html-classes;
 // $topbar-dropdown-toggle-alpha: 0.4;
 
 // Set the link colors and styles for top-level nav
-// $topbar-link-color: $white;
-// $topbar-link-color-hover: $white;
+ $topbar-link-color: #6C7A89;
+$topbar-link-color-hover: #222222;
 // $topbar-link-color-active: $white;
 // $topbar-link-color-active-hover: $white;
 // $topbar-link-weight: $font-weight-normal;
-// $topbar-link-font-size: rem-calc(13);
+ $topbar-link-font-size: rem-calc(18);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
 // $topbar-link-bg: $topbar-bg;
 // $topbar-link-bg-color-hover: $charcoal;
-// $topbar-link-bg-hover: $oil;
+$topbar-link-bg-hover: #ECF0F1;
 // $topbar-link-bg-active: $primary-color;
 // $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
 // $topbar-link-font-family: $body-font-family;
@@ -1415,10 +1415,10 @@ $include-html-global-classes: $include-html-classes;
 
 // Top menu icon styles
 // $topbar-menu-link-transform: uppercase;
-// $topbar-menu-link-font-size: rem-calc(13);
+ $topbar-menu-link-font-size: rem-calc(18);
 // $topbar-menu-link-weight: $font-weight-bold;
-// $topbar-menu-link-color: $white;
-// $topbar-menu-icon-color: $white;
+ $topbar-menu-link-color: #6C7A89;
+ $topbar-menu-icon-color: #6C7A89;
 // $topbar-menu-link-color-toggled: $jumbo;
 // $topbar-menu-icon-color-toggled: $jumbo;
 
