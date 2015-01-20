@@ -10,6 +10,9 @@
 		"bshaffer/oauth2-server-php": "v1.3",
 		"bshaffer/oauth2-server-httpfoundation-bridge": "~1.1"
 	},
+	"require-dev": {
+    	"way/generators": "~2.0"
+	},
 	"autoload": {
 		"classmap": [
 			"app/commands",

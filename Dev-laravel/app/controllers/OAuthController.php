@@ -24,6 +24,7 @@ class OAuthController extends \BaseController {
 				'user_id' => $token['user_id'],
 				'client'  => $token['client_id'],
 				'expires' => $token['expires'],
+				'token' => $token
 			));
 		}
 		else {

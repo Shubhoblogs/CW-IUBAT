@@ -85,3 +85,16 @@ Route::filter('csrf', function()
 		throw new Illuminate\Session\TokenMismatchException;
 	}
 });
+
+
+
+Route::filter('resourceRequestVerify', function()
+{
+	$bridgedRequest  = OAuth2\HttpFoundationBridge\Request::createFromRequest(Request::instance());
+	$bridgedResponse = new OAuth2\HttpFoundationBridge\Response();
+	if (!App::make('oauth2')->verifyResourceRequest($bridgedRequest, $bridgedResponse)) {
+		return Response::json(array(
+			'error' => 'Unauthorized'
+		), $bridgedResponse->getStatusCode());
+	}
+});

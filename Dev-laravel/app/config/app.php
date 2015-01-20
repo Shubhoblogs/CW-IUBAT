@@ -78,7 +78,7 @@ return array(
 	|
 	*/
 
-	'key' => 'YourSecretKey!!!',
+	'key' => 'jyzCUy3j4nly6xowZE7ytGsnAauQOQ4t',
 
 	'cipher' => MCRYPT_RIJNDAEL_128,
 
@@ -122,6 +122,7 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Jenssegers\Mongodb\MongodbServiceProvider',
+		'Way\Generators\GeneratorsServiceProvider',
 	),
 
 	/*

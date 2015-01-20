@@ -1,7 +1,6 @@
 <?php
 
 namespace OAuth2\Storage;
-
 /**
  * Simple MongoDB storage for all storage types
  *
@@ -14,6 +13,7 @@ namespace OAuth2\Storage;
  *
  * @author Julien Chaumond <chaumond@gmail.com>
  */
+use Illuminate\Support\Facades\Hash;
 class Mongo implements AuthorizationCodeInterface,
     AccessTokenInterface,
     ClientCredentialsInterface,
@@ -262,7 +262,7 @@ class Mongo implements AuthorizationCodeInterface,
     // plaintext passwords are bad!  Override this for your application
     protected function checkPassword($user, $password)
     {
-        return $user['password'] == $password;
+        return Hash::check($password,$user['password']);
     }
 
     public function getUser($username)

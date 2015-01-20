@@ -83,7 +83,9 @@ return array(
 	| specify a specific custom language line for a given attribute rule.
 	|
 	*/
+	"alpha_spaces"     => "The :attribute may only contain letters and spaces.",
 
+	
 	'custom' => array(
 		'attribute-name' => array(
 			'rule-name' => 'custom-message',
